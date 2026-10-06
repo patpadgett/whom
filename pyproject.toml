@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whom-cli"
+version = "0.1.0"
+description = "Who to ask about a file, and are they awake?"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+whom = "whom:main"
+
+[tool.setuptools]
+py-modules = ["whom"]
