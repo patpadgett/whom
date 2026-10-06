@@ -1,14 +1,33 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "whom-cli"
 version = "0.1.0"
-description = "Who to ask about a file, and are they awake?"
+description = "whom: who to ask about this file, and are they awake? Contributor ranking and local-time inference from git history."
 readme = "README.md"
 requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Patrick Padgett" }]
+keywords = ["git", "blame", "contributors", "ownership", "timezone", "cli", "developer-tools"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Version Control :: Git",
+  "Topic :: Utilities",
+]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/patpadgett/whom"
+Issues = "https://github.com/patpadgett/whom/issues"
 
 [project.scripts]
 whom = "whom:main"

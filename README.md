@@ -7,11 +7,13 @@ Who should I ask about this file, and are they awake right now?
 ## Install and run
 
 ```sh
-pipx install .
+pipx install whom-cli          # or: pip install whom-cli
 whom src/billing.py
 # Or, without installation:
 python3 whom.py src/billing.py
 ```
+
+The PyPI distribution is `whom-cli` (the name `whom` was taken); the command is `whom`.
 
 Point it at any file or directory, from anywhere: the repository is found from the first path given (falling back to the current directory when no path is given), so `whom ~/src/foo/bar.py` works from your home directory (plain `git log` would refuse).
 
