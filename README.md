@@ -1,5 +1,11 @@
 # whom
 
+[![CI](https://github.com/patpadgett/whom/actions/workflows/tests.yml/badge.svg)](https://github.com/patpadgett/whom/actions/workflows/tests.yml)
+[![PyPI](https://img.shields.io/pypi/v/whom-cli.svg)](https://pypi.org/project/whom-cli/)
+[![Python](https://img.shields.io/pypi/pyversions/whom-cli.svg)](https://pypi.org/project/whom-cli/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Dependencies](https://img.shields.io/badge/dependencies-zero-success.svg)](pyproject.toml)
+
 Who should I ask about this file, and are they awake right now?
 
 `whom` ranks contributors from Git history, shows their inferred current local time, and cautiously guesses whether they are awake. Python 3.9+ and Git are required. Runtime dependencies: standard library only. It runs locally, reads history, changes nothing in the repository, and sends no data anywhere.
